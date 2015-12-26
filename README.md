@@ -131,9 +131,10 @@ The package is continuously tested by [Travis CI](http://about.travis-ci.org/).
 
 
 
+[Core]:          http://api.icanboogie.org/icanboogie/3.0/class-ICanBoogie.Core.html
+[documentation]: http://api.icanboogie.org/bind-prototype/2.3/
+
 [icanboogie/icanboogie]: https://github.com/ICanBoogie/ICanBoogie
-[icanboogie/prototype]: https://github.com/icanboogie/prototype
-[Autoconfig feature]: https://github.com/ICanBoogie/ICanBoogie#autoconfig
-[ICanBoogie]: https://github.com/ICanBoogie/ICanBoogie
-[Core]: http://api.icanboogie.org/icanboogie/2.4/class-ICanBoogie.Core.html
-[documentation]: http://api.icanboogie.org/bind-prototype/0.1/
+[icanboogie/prototype]:  https://github.com/ICanBoogie/Prototype
+[Autoconfig feature]:    https://github.com/ICanBoogie/ICanBoogie#autoconfig
+[ICanBoogie]:            https://github.com/ICanBoogie/ICanBoogie
