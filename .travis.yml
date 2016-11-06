@@ -15,8 +15,8 @@ php:
   - hhvm
 
 before_script:
-  - if [[ $TRAVIS_PHP_VERSION != "5.5" ]]; then COMPOSER_ROOT_VERSION=2.3 composer install --prefer-dist; fi
-  - if [[ $TRAVIS_PHP_VERSION = "5.5" ]]; then COMPOSER_ROOT_VERSION=2.3 composer require satooshi/php-coveralls --prefer-dist; fi
+  - if [[ $TRAVIS_PHP_VERSION != "5.5" ]]; then COMPOSER_ROOT_VERSION=2.3.0 composer install --prefer-dist; fi
+  - if [[ $TRAVIS_PHP_VERSION = "5.5" ]]; then COMPOSER_ROOT_VERSION=2.3.0 composer require satooshi/php-coveralls --prefer-dist; fi
 
 script:
   - mkdir -p build/logs
