@@ -1,10 +1,10 @@
 # bind-prototype
 
 [![Release](https://img.shields.io/packagist/v/icanboogie/bind-prototype.svg)](https://packagist.org/packages/icanboogie/bind-prototype)
-[![Build Status](https://img.shields.io/travis/ICanBoogie/bind-prototype/master.svg)](http://travis-ci.org/ICanBoogie/bind-prototype)
+[![Build Status](https://img.shields.io/travis/ICanBoogie/bind-prototype/3.0.svg)](http://travis-ci.org/ICanBoogie/bind-prototype)
 [![HHVM](https://img.shields.io/hhvm/icanboogie/bind-prototype.svg)](http://hhvm.h4cc.de/package/icanboogie/bind-prototype)
-[![Code Quality](https://img.shields.io/scrutinizer/g/ICanBoogie/bind-prototype/master.svg)](https://scrutinizer-ci.com/g/ICanBoogie/bind-prototype)
-[![Code Coverage](https://img.shields.io/coveralls/ICanBoogie/bind-prototype/master.svg)](https://coveralls.io/r/ICanBoogie/bind-prototype)
+[![Code Quality](https://img.shields.io/scrutinizer/g/ICanBoogie/bind-prototype/3.0.svg)](https://scrutinizer-ci.com/g/ICanBoogie/bind-prototype)
+[![Code Coverage](https://img.shields.io/coveralls/ICanBoogie/bind-prototype/3.0.svg)](https://coveralls.io/r/ICanBoogie/bind-prototype)
 [![Packagist](https://img.shields.io/packagist/dt/icanboogie/bind-prototype.svg)](https://packagist.org/packages/icanboogie/bind-prototype)
 
 The **icanboogie/bind-prototype** package binds [icanboogie/prototype][] to [ICanBoogie][], using its
@@ -62,7 +62,7 @@ return [
 
 ## Requirements
 
-The package requires PHP 5.5 or later.
+The package requires PHP 5.6 or later.
 
 
 
@@ -116,8 +116,8 @@ the `make clean` command.
 
 The package is continuously tested by [Travis CI](http://about.travis-ci.org/).
 
-[![Build Status](https://img.shields.io/travis/ICanBoogie/bind-prototype/master.svg)](https://travis-ci.org/ICanBoogie/bind-prototype)
-[![Code Coverage](https://img.shields.io/coveralls/ICanBoogie/bind-prototype/master.svg)](https://coveralls.io/r/ICanBoogie/bind-prototype)
+[![Build Status](https://img.shields.io/travis/ICanBoogie/bind-prototype/3.0.svg)](https://travis-ci.org/ICanBoogie/bind-prototype)
+[![Code Coverage](https://img.shields.io/coveralls/ICanBoogie/bind-prototype/3.0.svg)](https://coveralls.io/r/ICanBoogie/bind-prototype)
 
 
 
@@ -131,8 +131,8 @@ The package is continuously tested by [Travis CI](http://about.travis-ci.org/).
 
 
 
-[Core]:          http://api.icanboogie.org/icanboogie/3.0/class-ICanBoogie.Core.html
-[documentation]: http://api.icanboogie.org/bind-prototype/2.3/
+[Core]:          http://api.icanboogie.org/icanboogie/4.0/class-ICanBoogie.Core.html
+[documentation]: http://api.icanboogie.org/bind-prototype/3.0/
 
 [icanboogie/icanboogie]: https://github.com/ICanBoogie/ICanBoogie
 [icanboogie/prototype]:  https://github.com/ICanBoogie/Prototype
