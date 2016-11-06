@@ -35,6 +35,11 @@ class Hooks
 
 				list($class, $method) = explode('::', $method);
 
+				if (is_string($callback) && strpos($callback, '::'))
+				{
+					$callback = explode('::', $callback, 2);
+				}
+
 				$methods[$class][$method] = $callback;
 			}
 		}

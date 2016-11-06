@@ -32,26 +32,28 @@ class HooksTest extends \PHPUnit_Framework_TestCase
 		$one_one_override = function() {};
 		$one_three = function() {};
 		$two_one = function() {};
+		$two_two = 'AClass::a_static_method';
 
 		$synthesized = Hooks::synthesize_config([
 
 			[
 
 				'one::one' => $one_one,
-				'one::two' => $one_two
+				'one::two' => $one_two,
 
 			],
 
 			[
 
 				'one::one' => $one_one_override,
-				'one::three' => $one_three
+				'one::three' => $one_three,
 
 			],
 
 			[
 
-				'two::one' => $two_one
+				'two::one' => $two_one,
+				'two::two' => $two_two,
 
 			]
 
@@ -69,7 +71,8 @@ class HooksTest extends \PHPUnit_Framework_TestCase
 
 			'two' => [
 
-				'one' => $two_one
+				'one' => $two_one,
+				'two' => [ 'AClass', 'a_static_method' ]
 
 			]
 
@@ -84,8 +87,8 @@ class HooksTest extends \PHPUnit_Framework_TestCase
 		$this->assertArrayHasKey('Article', $config);
 		$this->assertSame([
 
-			'url' => 'App\Hooks::url',
-			'get_url' => 'App\Hooks::get_url'
+			'url' => [ 'App\Hooks', 'url' ],
+			'get_url' => [ 'App\Hooks', 'get_url' ],
 
 		], $config['Article']);
 	}
