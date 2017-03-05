@@ -76,9 +76,6 @@ The recommended way to install this package is through [Composer](http://getcomp
 $ composer require icanboogie/bind-prototype
 ```
 
-The package only specifies a minimum version while requiring [icanboogie/icanboogie][] and
-[icanboogie/prototype], you might want to specify which version to use in your "composer.json" file.
-
 
 
 
@@ -131,10 +128,8 @@ The package is continuously tested by [Travis CI](http://about.travis-ci.org/).
 
 
 
-[Core]:          https://icanboogie.org/api/icanboogie/4.0/class-ICanBoogie.Core.html
 [documentation]: https://icanboogie.org/api/bind-prototype/3.0/
 
-[icanboogie/icanboogie]: https://github.com/ICanBoogie/ICanBoogie
 [icanboogie/prototype]:  https://github.com/ICanBoogie/Prototype
-[Autoconfig feature]:    https://github.com/ICanBoogie/ICanBoogie#autoconfig
-[ICanBoogie]:            https://github.com/ICanBoogie/ICanBoogie
+[Autoconfig feature]:    https://icanboogie.org/docs/4.0/autoconfig
+[ICanBoogie]:            https://icanboogie.org
