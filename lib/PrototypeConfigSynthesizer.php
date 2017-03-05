@@ -11,10 +11,7 @@
 
 namespace ICanBoogie\Binding\Prototype;
 
-/**
- * Hooks
- */
-class Hooks
+class PrototypeConfigSynthesizer
 {
 	/**
 	 * Synthesizes the "prototype" config from the "prototype" config fragments.
@@ -23,7 +20,7 @@ class Hooks
 	 *
 	 * @return array
 	 */
-	static public function synthesize_config(array $fragments)
+	static public function synthesize(array $fragments)
 	{
 		$methods = [];
 

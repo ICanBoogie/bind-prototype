@@ -11,14 +11,14 @@
 
 namespace ICanBoogie\Binding\Prototype;
 
-class HooksTest extends \PHPUnit_Framework_TestCase
+class PrototypeConfigSynthesizerTest extends \PHPUnit_Framework_TestCase
 {
 	/**
 	 * @expectedException \InvalidArgumentException
 	 */
 	public function test_synthesize_config_invalid()
 	{
-		Hooks::synthesize_config([
+		PrototypeConfigSynthesizer::synthesize([
 
 			[ 'invalid_method' => function () {} ]
 
@@ -34,7 +34,7 @@ class HooksTest extends \PHPUnit_Framework_TestCase
 		$two_one = function() {};
 		$two_two = 'AClass::a_static_method';
 
-		$synthesized = Hooks::synthesize_config([
+		$synthesized = PrototypeConfigSynthesizer::synthesize([
 
 			[
 
