@@ -11,6 +11,9 @@
 
 namespace ICanBoogie\Binding\Prototype;
 
+/**
+ * @group unit
+ */
 class PrototypeConfigSynthesizerTest extends \PHPUnit_Framework_TestCase
 {
 	/**
@@ -77,19 +80,5 @@ class PrototypeConfigSynthesizerTest extends \PHPUnit_Framework_TestCase
 			]
 
 		], $synthesized);
-	}
-
-	public function test_prototype_config()
-	{
-		$config = \ICanBoogie\app()->configs['prototype'];
-
-		$this->assertNotEmpty($config);
-		$this->assertArrayHasKey('Article', $config);
-		$this->assertSame([
-
-			'url' => [ 'App\Hooks', 'url' ],
-			'get_url' => [ 'App\Hooks', 'get_url' ],
-
-		], $config['Article']);
 	}
 }
