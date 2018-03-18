@@ -14,7 +14,7 @@ namespace ICanBoogie\Binding\Prototype;
 /**
  * @group unit
  */
-class PrototypeConfigSynthesizerTest extends \PHPUnit_Framework_TestCase
+class PrototypeConfigSynthesizerTest extends \PHPUnit\Framework\TestCase
 {
 	/**
 	 * @expectedException \InvalidArgumentException
