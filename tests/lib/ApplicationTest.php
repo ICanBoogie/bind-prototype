@@ -16,7 +16,7 @@ use function ICanBoogie\app;
 /**
  * @group integration
  */
-class ApplicationTest extends \PHPUnit_Framework_TestCase
+class ApplicationTest extends \PHPUnit\Framework\TestCase
 {
 	public function test_get_prototype_config()
 	{
