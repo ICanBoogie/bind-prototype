@@ -11,6 +11,8 @@
 
 namespace ICanBoogie\Binding\Prototype;
 
+use function ICanBoogie\format;
+
 class PrototypeConfigSynthesizer
 {
 	/**
@@ -20,7 +22,7 @@ class PrototypeConfigSynthesizer
 	 *
 	 * @return array
 	 */
-	static public function synthesize(array $fragments)
+	static public function synthesize(array $fragments): array
 	{
 		$methods = [];
 
@@ -30,11 +32,11 @@ class PrototypeConfigSynthesizer
 			{
 				self::assert_valid_prototype_method_name($method, $pathname);
 
-				list($class, $method) = explode('::', $method);
+				[ $class, $method ] = \explode('::', $method);
 
-				if (is_string($callback) && strpos($callback, '::'))
+				if (\is_string($callback) && \strpos($callback, '::'))
 				{
-					$callback = explode('::', $callback, 2);
+					$callback = \explode('::', $callback, 2);
 				}
 
 				$methods[$class][$method] = $callback;
@@ -52,13 +54,13 @@ class PrototypeConfigSynthesizer
 	 *
 	 * @throws \InvalidArgumentException if a method definition is missing the '::' separator.
 	 */
-	static private function assert_valid_prototype_method_name($method, $pathname)
+	static private function assert_valid_prototype_method_name(string $method, string $pathname): void
 	{
-		if (strpos($method, '::') === false)
+		if (\strpos($method, '::') === false)
 		{
-			throw new \InvalidArgumentException(\ICanBoogie\format
+			throw new \InvalidArgumentException(format
 			(
-				'Invalid method name %method in %pathname, expected %expected.', [
+				"Invalid method name %method in %pathname, expected %expected.", [
 
 					'method' => $method,
 					'pathname' => $pathname,
