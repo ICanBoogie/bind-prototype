@@ -11,16 +11,18 @@
 
 namespace ICanBoogie\Binding\Prototype;
 
+use InvalidArgumentException;
+use PHPUnit\Framework\TestCase;
+
 /**
  * @group unit
  */
-class PrototypeConfigSynthesizerTest extends \PHPUnit\Framework\TestCase
+class PrototypeConfigSynthesizerTest extends TestCase
 {
-	/**
-	 * @expectedException \InvalidArgumentException
-	 */
 	public function test_synthesize_config_invalid()
 	{
+		$this->expectException(InvalidArgumentException::class);
+
 		PrototypeConfigSynthesizer::synthesize([
 
 			[ 'invalid_method' => function () {} ]
