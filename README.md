@@ -1,7 +1,7 @@
 # bind-prototype
 
 [![Release](https://img.shields.io/packagist/v/icanboogie/bind-prototype.svg)](https://packagist.org/packages/icanboogie/bind-prototype)
-[![Build Status](https://img.shields.io/travis/ICanBoogie/bind-prototype.svg)](http://travis-ci.org/ICanBoogie/bind-prototype)
+[![Build Status](https://img.shields.io/github/workflow/status/ICanBoogie/bind-prototype/test)](https://github.com/ICanBoogie/bind-prototype/actions?query=workflow%3Atest)
 [![Code Quality](https://img.shields.io/scrutinizer/g/ICanBoogie/bind-prototype.svg)](https://scrutinizer-ci.com/g/ICanBoogie/bind-prototype)
 [![Code Coverage](https://img.shields.io/coveralls/ICanBoogie/bind-prototype.svg)](https://coveralls.io/r/ICanBoogie/bind-prototype)
 [![Packagist](https://img.shields.io/packagist/dt/icanboogie/bind-prototype.svg)](https://packagist.org/packages/icanboogie/bind-prototype)
@@ -43,8 +43,8 @@ $hooks = Hooks::class . '::';
 
 return [
 
-	Article::class . '::url' => $hooks . '::url',
-	Article::class . '::get_url' => $hooks . '::url'
+    Article::class . '::url' => $hooks . '::url',
+    Article::class . '::get_url' => $hooks . '::url'
 
 ];
 ```
