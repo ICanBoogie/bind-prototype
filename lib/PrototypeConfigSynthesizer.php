@@ -11,16 +11,21 @@
 
 namespace ICanBoogie\Binding\Prototype;
 
-use function ICanBoogie\format;
+use InvalidArgumentException;
 
-class PrototypeConfigSynthesizer
+use function explode;
+use function ICanBoogie\format;
+use function is_string;
+use function strpos;
+
+final class PrototypeConfigSynthesizer
 {
 	/**
 	 * Synthesizes the "prototype" config from the "prototype" config fragments.
 	 *
-	 * @param array $fragments
+	 * @param array<string, array<string, callable>> $fragments
 	 *
-	 * @return array
+	 * @return array<string, array<string, callable>
 	 */
 	static public function synthesize(array $fragments): array
 	{
@@ -32,11 +37,11 @@ class PrototypeConfigSynthesizer
 			{
 				self::assert_valid_prototype_method_name($method, $pathname);
 
-				[ $class, $method ] = \explode('::', $method);
+				[ $class, $method ] = explode('::', $method);
 
-				if (\is_string($callback) && \strpos($callback, '::'))
+				if (is_string($callback) && strpos($callback, '::'))
 				{
-					$callback = \explode('::', $callback, 2);
+					$callback = explode('::', $callback, 2);
 				}
 
 				$methods[$class][$method] = $callback;
@@ -49,16 +54,13 @@ class PrototypeConfigSynthesizer
 	/**
 	 * Asserts that a prototype method name is valid.
 	 *
-	 * @param string $method
-	 * @param string $pathname
-	 *
-	 * @throws \InvalidArgumentException if a method definition is missing the '::' separator.
+	 * @throws InvalidArgumentException if a method definition is missing the '::' separator.
 	 */
 	static private function assert_valid_prototype_method_name(string $method, string $pathname): void
 	{
-		if (\strpos($method, '::') === false)
+		if (!str_contains($method, '::'))
 		{
-			throw new \InvalidArgumentException(format
+			throw new InvalidArgumentException(format
 			(
 				"Invalid method name %method in %pathname, expected %expected.", [
 
