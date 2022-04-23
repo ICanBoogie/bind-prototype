@@ -41,6 +41,9 @@
 		}
 	},
 	"autoload-dev": {
+		"psr-4": {
+			"Test\\ICanBoogie\\Binding\\Prototype\\": "tests/lib"
+		},
 		"classmap": [
 			"tests/Application.php"
 		]
@@ -48,7 +51,7 @@
 	"extra": {
 		"icanboogie": {
 			"config-constructor": {
-				"prototype": "ICanBoogie\\Binding\\Prototype\\PrototypeConfigSynthesizer::synthesize"
+				"prototype": "ICanBoogie\\Binding\\Prototype\\ConfigBuilder"
 			}
 		}
 	},

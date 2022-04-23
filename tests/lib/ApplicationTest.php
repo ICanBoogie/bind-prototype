@@ -9,14 +9,16 @@
  * file that was distributed with this source code.
  */
 
-namespace ICanBoogie\Binding\Prototype;
+namespace Test\ICanBoogie\Binding\Prototype;
+
+use PHPUnit\Framework\TestCase;
 
 use function ICanBoogie\app;
 
 /**
  * @group integration
  */
-class ApplicationTest extends \PHPUnit\Framework\TestCase
+final class ApplicationTest extends TestCase
 {
 	public function test_get_prototype_config()
 	{
