@@ -16,6 +16,11 @@ use ICanBoogie\Prototype\Config;
 
 final class ConfigBuilder implements Builder
 {
+	public static function get_fragment_filename(): string
+	{
+		return 'prototype';
+	}
+
 	private \ICanBoogie\Prototype\ConfigBuilder $inner_builder;
 
 	public function __construct()
