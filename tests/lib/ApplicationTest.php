@@ -11,6 +11,7 @@
 
 namespace Test\ICanBoogie\Binding\Prototype;
 
+use ICanBoogie\Prototype;
 use PHPUnit\Framework\TestCase;
 
 use function ICanBoogie\app;
@@ -22,15 +23,15 @@ final class ApplicationTest extends TestCase
 {
 	public function test_get_prototype_config()
 	{
-		$config = app()->configs['prototype'];
+		$config = app()->configs->config_for_class(Prototype\Config::class);
 
-		$this->assertNotEmpty($config);
-		$this->assertArrayHasKey('Article', $config);
+		$this->assertNotEmpty($config->bindings);
+		$this->assertArrayHasKey('Article', $config->bindings);
 		$this->assertSame([
 
 			'url' => [ 'App\Hooks', 'url' ],
 			'get_url' => [ 'App\Hooks', 'get_url' ],
 
-		], $config['Article']);
+		], $config->bindings['Article']);
 	}
 }
