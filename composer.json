@@ -51,7 +51,7 @@
 	"extra": {
 		"icanboogie": {
 			"config-constructor": {
-				"prototype": "ICanBoogie\\Binding\\Prototype\\ConfigBuilder"
+				"ICanBoogie\\Prototype\\Config": "ICanBoogie\\Binding\\Prototype\\ConfigBuilder"
 			}
 		}
 	},
