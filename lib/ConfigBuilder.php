@@ -14,37 +14,39 @@ namespace ICanBoogie\Binding\Prototype;
 use ICanBoogie\Config\Builder;
 use ICanBoogie\Prototype\Config;
 
+/**
+ * @implements Builder<Config>
+ */
 final class ConfigBuilder implements Builder
 {
-	public static function get_fragment_filename(): string
-	{
-		return 'prototype';
-	}
+    public static function get_fragment_filename(): string
+    {
+        return 'prototype';
+    }
 
-	private \ICanBoogie\Prototype\ConfigBuilder $inner_builder;
+    private \ICanBoogie\Prototype\ConfigBuilder $inner_builder;
 
-	public function __construct()
-	{
-		$this->inner_builder = new \ICanBoogie\Prototype\ConfigBuilder();
-	}
+    public function __construct()
+    {
+        $this->inner_builder = new \ICanBoogie\Prototype\ConfigBuilder();
+    }
 
-	public function build(): Config
-	{
-		return $this->inner_builder->build();
-	}
+    public function build(): Config
+    {
+        return $this->inner_builder->build();
+    }
 
+    /**
+     * @param class-string $target_class The class that will receive the method extension.
+     * @param string $method The name of the method to add to the class.
+     * @param callable $callable The handler for the method.
+     *
+     * @return $this
+     */
+    public function bind(string $target_class, string $method, callable $callable): self
+    {
+        $this->inner_builder->bind($target_class, $method, $callable);
 
-	/**
-	 * @param class-string $target_class The class that will receive the method extension.
-	 * @param string $method The name of the method to add to the class.
-	 * @param callable $callable The handler for the method.
-	 *
-	 * @return $this
-	 */
-	public function bind(string $target_class, string $method, callable $callable): self
-	{
-		$this->inner_builder->bind($target_class, $method, $callable);
-
-		return $this;
-	}
+        return $this;
+    }
 }

@@ -13,13 +13,13 @@ namespace Test\ICanBoogie\Binding\Prototype;
 
 final class Hooks
 {
-	static public function get_url(Article $article): string
-	{
-		return $article->url();
-	}
+    public static function get_url(Article $article): string
+    {
+        return $article->url();
+    }
 
-	static public function url(Article $article): string
-	{
-		return "/articles/$article->id";
-	}
+    public static function url(Article $article): string
+    {
+        return "/articles/$article->id";
+    }
 }

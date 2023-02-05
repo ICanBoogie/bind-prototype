@@ -21,17 +21,17 @@ use function ICanBoogie\app;
  */
 final class ApplicationTest extends TestCase
 {
-	public function test_get_prototype_config()
-	{
-		$config = app()->configs->config_for_class(Prototype\Config::class);
+    public function test_get_prototype_config(): void
+    {
+        $config = app()->configs->config_for_class(Prototype\Config::class);
 
-		$this->assertNotEmpty($config->bindings);
-		$this->assertArrayHasKey('Article', $config->bindings);
-		$this->assertSame([
+        $this->assertNotEmpty($config->bindings);
+        $this->assertArrayHasKey(Article::class, $config->bindings);
+        $this->assertSame([
 
-			'url' => [ 'App\Hooks', 'url' ],
-			'get_url' => [ 'App\Hooks', 'get_url' ],
+            'url' => [Hooks::class, 'url'],
+            'get_url' => [Hooks::class, 'get_url'],
 
-		], $config->bindings['Article']);
-	}
+        ], $config->bindings[Article::class]);
+    }
 }
