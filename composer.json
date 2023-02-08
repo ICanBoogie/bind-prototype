@@ -44,10 +44,7 @@
 	"autoload-dev": {
 		"psr-4": {
 			"Test\\ICanBoogie\\Binding\\Prototype\\": "tests/lib"
-		},
-		"classmap": [
-			"tests/Application.php"
-		]
+		}
 	},
 	"extra": {
 		"icanboogie": {
