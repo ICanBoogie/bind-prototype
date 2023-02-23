@@ -1,0 +1,18 @@
+services:
+  _defaults:
+    autowire: true
+
+  ICanBoogie\Prototype\Config:
+    factory: [ '@ICanBoogie\ConfigProvider', config_for_class ]
+    arguments:
+    - ICanBoogie\Prototype\Config
+
+  # Console
+
+  console.command.prototypes.list:
+    class: ICanBoogie\Binding\Prototype\Console\ListPrototypesCommand
+    arguments:
+      $style: '%console.style.table%'
+    tags:
+    - { name: console.command, command: 'prototypes' }
+    - { name: console.command, command: 'prototypes:list' }
