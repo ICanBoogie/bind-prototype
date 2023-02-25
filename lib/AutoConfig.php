@@ -11,7 +11,7 @@
 
 namespace ICanBoogie\Binding\Prototype;
 
-use ICanBoogie\Application;
+use ICanBoogie\ConfigProvider;
 use ICanBoogie\Prototype;
 
 final class AutoConfig
@@ -19,8 +19,8 @@ final class AutoConfig
     /**
      * Binds prototype configuration.
      */
-    public static function configure(Application $app): void
+    public static function configure(ConfigProvider $config_provider): void
     {
-        Prototype::bind($app->configs->config_for_class(Prototype\Config::class));
+        Prototype::bind($config_provider->config_for_class(Prototype\Config::class));
     }
 }
