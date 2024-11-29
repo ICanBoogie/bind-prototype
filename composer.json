@@ -8,7 +8,7 @@
 		"icanboogie"
 	],
 	"homepage": "https://icanboogie.org/",
-	"license": "BSD-3-Clause",
+	"license": "MIT",
 	"authors": [
 		{
 			"name": "Olivier Laviale",
@@ -22,20 +22,22 @@
 		"source": "https://github.com/ICanBoogie/bind-prototype"
 	},
 	"config": {
-		"sort-packages": true
+		"sort-packages": true,
+		"allow-plugins": {
+			"icanboogie/autoconfig": true
+		}
 	},
 	"minimum-stability": "dev",
 	"prefer-stable": true,
-	"prefer-dist": true,
 	"require": {
-		"php": ">=8.1",
+		"php": ">=8.2",
 		"icanboogie/icanboogie": "^6.0",
 		"icanboogie/prototype": "^6.0"
 	},
 	"require-dev": {
 		"icanboogie/console": "^6.0",
-		"phpstan/phpstan": "^1.9",
-		"phpunit/phpunit": "^9.5"
+		"phpstan/phpstan": "^2.0",
+		"phpunit/phpunit": "^11.4"
 	},
 	"autoload": {
 		"psr-4": {
@@ -54,8 +56,5 @@
 				"ICanBoogie\\Prototype\\Config": "ICanBoogie\\Binding\\Prototype\\ConfigBuilder"
 			}
 		}
-	},
-	"scripts": {
-		"post-autoload-dump": "ICanBoogie\\Autoconfig\\Hooks::on_autoload_dump"
 	}
 }

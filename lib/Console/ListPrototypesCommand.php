@@ -4,15 +4,15 @@ namespace ICanBoogie\Binding\Prototype\Console;
 
 use ICanBoogie\Console\CallableDisplayName;
 use ICanBoogie\Prototype\Config;
+use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Helper\Table;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
+#[AsCommand(name: 'prototype:list', description: 'List prototype callbacks', aliases: [ 'prototypes' ])]
 final class ListPrototypesCommand extends Command
 {
-    protected static $defaultDescription = "List prototype callbacks";
-
     public function __construct(
         private readonly Config $config,
         private readonly string $style,
@@ -29,7 +29,7 @@ final class ListPrototypesCommand extends Command
                 $rows[] = [
                     $target,
                     $method,
-                    CallableDisplayName::from($callback)
+                    CallableDisplayName::from($callback),
                 ];
             }
         }

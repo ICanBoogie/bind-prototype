@@ -29,7 +29,7 @@ final class ListPrototypesCommandTest extends CommandTestCase
     {
         $loader = $this->getCommandLoader();
         $command1 = $loader->get('prototypes');
-        $command2 = $loader->get('prototypes:list');
+        $command2 = $loader->get('prototype:list');
 
         $this->assertSame($command1, $command2);
     }

@@ -1,8 +1,7 @@
 # bind-prototype
 
 [![Release](https://img.shields.io/packagist/v/icanboogie/bind-prototype.svg)](https://packagist.org/packages/icanboogie/bind-prototype)
-[![Code Quality](https://img.shields.io/scrutinizer/g/ICanBoogie/bind-prototype.svg)](https://scrutinizer-ci.com/g/ICanBoogie/bind-prototype)
-[![Code Coverage](https://img.shields.io/coveralls/ICanBoogie/bind-prototype.svg)](https://coveralls.io/r/ICanBoogie/bind-prototype)
+[![Code Coverage](https://coveralls.io/repos/github/ICanBoogie/bind-prototype/badge.svg?branch=6.0)](https://coveralls.io/r/ICanBoogie/bind-prototype?branch=6.0)
 [![Downloads](https://img.shields.io/packagist/dt/icanboogie/bind-prototype.svg)](https://packagist.org/packages/icanboogie/bind-prototype)
 
 The **icanboogie/bind-prototype** package binds [icanboogie/prototype][] to [ICanBoogie][], using its
@@ -23,7 +22,7 @@ $app->configs[Prototype\Config::class]; // obtain the "prototype" config.
 
 #### Installation
 
-```bash
+```shell
 composer require icanboogie/bind-prototype
 ```
 
@@ -61,28 +60,22 @@ return fn(ConfigBuilder $config) => $config
 
 The project is continuously tested by [GitHub actions](https://github.com/ICanBoogie/bind-prototype/actions).
 
-[![Tests](https://github.com/ICanBoogie/bind-prototype/workflows/test/badge.svg?branch=master)](https://github.com/ICanBoogie/bind-prototype/actions?query=workflow%3Atest)
-[![Static Analysis](https://github.com/ICanBoogie/bind-prototype/workflows/static-analysis/badge.svg?branch=master)](https://github.com/ICanBoogie/bind-prototype/actions?query=workflow%3Astatic-analysis)
-[![Code Style](https://github.com/ICanBoogie/bind-prototype/workflows/code-style/badge.svg?branch=master)](https://github.com/ICanBoogie/bind-prototype/actions?query=workflow%3Acode-style)
+[![Tests](https://github.com/ICanBoogie/bind-prototype/actions/workflows/test.yml/badge.svg?branch=6.0)](https://github.com/ICanBoogie/bind-prototype/actions/workflows/test.yml)
+[![Static Analysis](https://github.com/ICanBoogie/bind-prototype/actions/workflows/static-analysis.yml/badge.svg?branch=6.0)](https://github.com/ICanBoogie/bind-prototype/actions/workflows/static-analysis.yml)
+[![Code Style](https://github.com/ICanBoogie/bind-prototype/actions/workflows/code-style.yml/badge.svg?branch=6.0)](https://github.com/ICanBoogie/bind-prototype/actions/workflows/code-style.yml)
 
 
 
 ## Code of Conduct
 
 This project adheres to a [Contributor Code of Conduct](CODE_OF_CONDUCT.md). By participating in
-this project and its community, you are expected to uphold this code.
+this project and its community, you're expected to uphold this code.
 
 
 
 ## Contributing
 
-Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
-
-
-
-## License
-
-**icanboogie/bind-prototype** is released under the [BSD-3-Clause](LICENSE).
+See [CONTRIBUTING](CONTRIBUTING.md) for details.
 
 
 

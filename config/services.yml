@@ -5,14 +5,14 @@ services:
   ICanBoogie\Prototype\Config:
     factory: [ '@ICanBoogie\ConfigProvider', config_for_class ]
     arguments:
-    - ICanBoogie\Prototype\Config
+      - ICanBoogie\Prototype\Config
 
   # Console
 
-  console.command.prototypes.list:
+  ICanBoogie\Binding\Prototype\Console\ListPrototypesCommand:
     class: ICanBoogie\Binding\Prototype\Console\ListPrototypesCommand
     arguments:
       $style: '%console.style.table%'
     tags:
-    - { name: console.command, command: 'prototypes' }
-    - { name: console.command, command: 'prototypes:list' }
+      - { name: console.command, command: 'prototype:list' }
+      - { name: console.command, command: 'prototypes' }
