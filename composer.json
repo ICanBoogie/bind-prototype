@@ -1,60 +1,60 @@
 {
-	"name": "icanboogie/bind-prototype",
-	"type": "library",
-	"description": "Binds icanboogie/prototype to ICanBoogie.",
-	"version": "6.0",
-	"keywords": [
-		"prototype",
-		"icanboogie"
-	],
-	"homepage": "https://icanboogie.org/",
-	"license": "MIT",
-	"authors": [
-		{
-			"name": "Olivier Laviale",
-			"email": "olivier.laviale@gmail.com",
-			"homepage": "https://olvlvl.com/",
-			"role": "Developer"
-		}
-	],
-	"support": {
-		"issues": "https://github.com/ICanBoogie/bind-prototype/issues",
-		"source": "https://github.com/ICanBoogie/bind-prototype"
-	},
-	"config": {
-		"sort-packages": true,
-		"allow-plugins": {
-			"icanboogie/autoconfig": true
-		}
-	},
-	"minimum-stability": "dev",
-	"prefer-stable": true,
-	"require": {
-		"php": ">=8.2",
-		"icanboogie/icanboogie": "^6.0",
-		"icanboogie/prototype": "^6.0"
-	},
-	"require-dev": {
-		"icanboogie/console": "^6.0",
-		"phpstan/phpstan": "^2.0",
-		"phpunit/phpunit": "^11.4"
-	},
-	"autoload": {
-		"psr-4": {
-			"ICanBoogie\\Binding\\Prototype\\": "lib/"
-		}
-	},
-	"autoload-dev": {
-		"psr-4": {
-			"Test\\ICanBoogie\\Binding\\Prototype\\": "tests/lib"
-		}
-	},
-	"extra": {
-		"icanboogie": {
-            "config-path": "config",
-			"config-constructor": {
-				"ICanBoogie\\Prototype\\Config": "ICanBoogie\\Binding\\Prototype\\ConfigBuilder"
-			}
-		}
-	}
+  "name": "icanboogie/bind-prototype",
+  "type": "library",
+  "description": "Binds icanboogie/prototype to ICanBoogie.",
+  "version": "7.0",
+  "keywords": [
+    "prototype",
+    "icanboogie"
+  ],
+  "homepage": "https://icanboogie.org/",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Olivier Laviale",
+      "email": "olivier.laviale@gmail.com",
+      "homepage": "https://olvlvl.com/",
+      "role": "Developer"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/ICanBoogie/bind-prototype/issues",
+    "source": "https://github.com/ICanBoogie/bind-prototype"
+  },
+  "config": {
+    "sort-packages": true,
+    "allow-plugins": {
+      "icanboogie/autoconfig": true
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {
+    "php": ">=8.4",
+    "icanboogie/icanboogie": "^7.0",
+    "icanboogie/prototype": "^6.0"
+  },
+  "require-dev": {
+    "icanboogie/console": "^7.0",
+    "phpstan/phpstan": "^2.0",
+    "phpunit/phpunit": "^11.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "ICanBoogie\\Binding\\Prototype\\": "lib/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Test\\ICanBoogie\\Binding\\Prototype\\": "tests/lib"
+    }
+  },
+  "extra": {
+    "icanboogie": {
+      "config-path": "config",
+      "config-constructor": {
+        "ICanBoogie\\Prototype\\Config": "ICanBoogie\\Binding\\Prototype\\ConfigBuilder"
+      }
+    }
+  }
 }
