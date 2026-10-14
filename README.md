@@ -1,7 +1,7 @@
 # bind-prototype
 
 [![Release](https://img.shields.io/packagist/v/icanboogie/bind-prototype.svg)](https://packagist.org/packages/icanboogie/bind-prototype)
-[![Code Coverage](https://coveralls.io/repos/github/ICanBoogie/bind-prototype/badge.svg?branch=6.0)](https://coveralls.io/r/ICanBoogie/bind-prototype?branch=6.0)
+[![Code Coverage](https://coveralls.io/repos/github/ICanBoogie/bind-prototype/badge.svg?branch=7.0)](https://coveralls.io/r/ICanBoogie/bind-prototype?branch=7.0)
 [![Downloads](https://img.shields.io/packagist/dt/icanboogie/bind-prototype.svg)](https://packagist.org/packages/icanboogie/bind-prototype)
 
 The **icanboogie/bind-prototype** package binds [icanboogie/prototype][] to [ICanBoogie][], using its
@@ -60,9 +60,9 @@ return fn(ConfigBuilder $config) => $config
 
 The project is continuously tested by [GitHub actions](https://github.com/ICanBoogie/bind-prototype/actions).
 
-[![Tests](https://github.com/ICanBoogie/bind-prototype/actions/workflows/test.yml/badge.svg?branch=6.0)](https://github.com/ICanBoogie/bind-prototype/actions/workflows/test.yml)
-[![Static Analysis](https://github.com/ICanBoogie/bind-prototype/actions/workflows/static-analysis.yml/badge.svg?branch=6.0)](https://github.com/ICanBoogie/bind-prototype/actions/workflows/static-analysis.yml)
-[![Code Style](https://github.com/ICanBoogie/bind-prototype/actions/workflows/code-style.yml/badge.svg?branch=6.0)](https://github.com/ICanBoogie/bind-prototype/actions/workflows/code-style.yml)
+[![Tests](https://github.com/ICanBoogie/bind-prototype/actions/workflows/test.yml/badge.svg?branch=7.0)](https://github.com/ICanBoogie/bind-prototype/actions/workflows/test.yml)
+[![Static Analysis](https://github.com/ICanBoogie/bind-prototype/actions/workflows/static-analysis.yml/badge.svg?branch=7.0)](https://github.com/ICanBoogie/bind-prototype/actions/workflows/static-analysis.yml)
+[![Code Style](https://github.com/ICanBoogie/bind-prototype/actions/workflows/code-style.yml/badge.svg?branch=7.0)](https://github.com/ICanBoogie/bind-prototype/actions/workflows/code-style.yml)
 
 
 
