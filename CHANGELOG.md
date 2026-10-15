@@ -19,6 +19,7 @@ None
 - Requires `icanboogie/prototype` ^7.0.
 - Removed `ICanBoogie\Binding\Prototype\ConfigBuilder`; `prototype` fragments now receive `ICanBoogie\Prototype\ConfigBuilder`, which
   implements `ICanBoogie\Config\Builder`.
+- Replaced `ICanBoogie\Binding\Prototype\AutoConfig::configure()`, which `Application::boot()` called by name, with `ICanBoogie\Binding\Prototype\Boot::boot()`, registered through the `autoboot` key of `composer.json`. Requires `icanboogie/autoconfig` ^7.0 with `autoboot` support.
 
 ### Other Changes
 

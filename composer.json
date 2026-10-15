@@ -56,7 +56,8 @@
       "config-path": "config",
       "config-constructor": {
         "ICanBoogie\\Prototype\\Config": "ICanBoogie\\Prototype\\ConfigBuilder"
-      }
+      },
+      "autoboot": "ICanBoogie\\Binding\\Prototype\\Boot::boot"
     }
   }
 }
