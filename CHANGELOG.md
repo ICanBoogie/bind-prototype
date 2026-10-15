@@ -16,7 +16,9 @@ None
 
 ### Backward Incompatible Changes
 
-None
+- Requires `icanboogie/prototype` ^7.0.
+- Removed `ICanBoogie\Binding\Prototype\ConfigBuilder`; `prototype` fragments now receive `ICanBoogie\Prototype\ConfigBuilder`, which
+  implements `ICanBoogie\Config\Builder`.
 
 ### Other Changes
 

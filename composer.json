@@ -34,7 +34,7 @@
   "require": {
     "php": ">=8.4",
     "icanboogie/icanboogie": "^7.0",
-    "icanboogie/prototype": "^6.0"
+    "icanboogie/prototype": "^7.0"
   },
   "require-dev": {
     "icanboogie/console": "^7.0",
@@ -55,7 +55,7 @@
     "icanboogie": {
       "config-path": "config",
       "config-constructor": {
-        "ICanBoogie\\Prototype\\Config": "ICanBoogie\\Binding\\Prototype\\ConfigBuilder"
+        "ICanBoogie\\Prototype\\Config": "ICanBoogie\\Prototype\\ConfigBuilder"
       }
     }
   }

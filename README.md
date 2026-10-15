@@ -41,7 +41,7 @@ The following example demonstrates how an application may bind a `url()` method 
 
 namespace App;
 
-use ICanBoogie\Binding\Prototype\ConfigBuilder;
+use ICanBoogie\Prototype\ConfigBuilder;
 
 return fn(ConfigBuilder $config) => $config
     ->bind(Article::class, 'url', [ Hooks::class, 'url' ])

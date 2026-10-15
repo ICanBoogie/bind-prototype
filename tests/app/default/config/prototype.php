@@ -1,6 +1,6 @@
 <?php
 
-use ICanBoogie\Binding\Prototype\ConfigBuilder;
+use ICanBoogie\Prototype\ConfigBuilder;
 use Test\ICanBoogie\Binding\Prototype\Article;
 use Test\ICanBoogie\Binding\Prototype\Hooks;
 
